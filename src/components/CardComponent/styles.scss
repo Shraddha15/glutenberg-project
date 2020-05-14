@@ -1,0 +1,22 @@
+@import '../../theme/variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.section-card{
+  border-radius: 4px;
+  padding-left: 10px ;
+  padding-right: 10px;
+  padding-top:auto;
+  padding-bottom:auto;
+  height: 50px;
+  box-shadow: 0 2px 5px 0 #d3d1ee80;
+  background-color: $white;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  .genre{
+    font-family: 'Montserrat', sans-serif;
+    color:$dark-grey;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}

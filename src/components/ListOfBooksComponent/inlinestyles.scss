@@ -1,0 +1,76 @@
+@import '../../theme/variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.search-section{
+  background-color: $white;
+  .header {
+    // padding-right: 30px;
+    // padding-left: 30px;
+    .search-icon{
+      position: absolute;
+      margin-left:10px;
+      margin-top:12px;
+    }
+    .back-icon{
+      cursor: pointer;
+    }
+    .input-box{
+      width: 100%;
+      height : 40px;
+      border-radius : 4px;
+      padding-left : 36px;
+      padding-right: 10px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size:16px;
+      ::placeholder{
+        color:$grey-regular;
+      }
+      background-color: $light-grey;
+      &:focus{
+        border:1px solid $primary-color;
+        outline : none;
+      }
+      
+    }
+  }
+}
+.list-wrapper{
+  display : flex;
+  flex-wrap: wrap;
+  flex-basis : 16.666%;
+  justify-content: space-between;
+  @media screen and (max-width: 768px){
+    flex-basis:33.33%;
+  }
+  .book-item{
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 114px;
+    cursor: pointer;
+    .book-cover{
+      width:114px;
+      height: 162px;
+      border-radius: 8px; 
+      box-shadow: 0 2px 5px 0 rgba(211, 209, 238, 0.5);
+    }
+    .book-title{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .book-author{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      color:$grey-regular;
+    }
+  }
+  
+}
+.custom-color{
+  color:$primary-color !important;
+}
